@@ -11,7 +11,6 @@
 
 During the development process, you should use `npm run dev` to have livereload each time you modify a file in `app` folder.
 
-
 ## Run the linter
 
 ```
