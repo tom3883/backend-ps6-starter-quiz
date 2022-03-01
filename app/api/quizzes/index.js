@@ -33,6 +33,14 @@ router.post('/', (req, res) => {
   }
 })
 
+router.put('/:quizId', (req, res) => {
+  try {
+    res.status(200).json(Quiz.update(req.params.quizId, req.body))
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
+
 router.delete('/:quizId', (req, res) => {
   try {
     res.status(200).json(Quiz.delete(req.params.quizId))
